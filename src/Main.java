@@ -18,11 +18,18 @@ public class Main {
         game = scnr.next();
 
         if (game.equals("Yes") | (game.equals("yes"))) {
-            System.out.print("Excellent! Let's begin! You're walking through the woods, and you come across a chest. What do you do? (Open it or Ignore it): ");
+            System.out.print("Excellent! Let's begin! You're walking through the woods, and you come across a chest. What do you do? (Open or Ignore): ");
             chest = scnr.next();
 
         }else{
             System.out.print("Okay, goodbye!");
+        }
+
+        if (chest.equals("Open") | (chest.equals("open"))) {
+            System.out.print("You find a sword and shield! You continue on and discover a cave. What do you do? (Enter or Leave): ");
+            cave = scnr.next();
+        }else{
+            System.out.println("You leave the cave, but get attacked by bandits along the road. How unfortunate.");
         }
     }
 }
